@@ -1,1 +1,1 @@
-
+Im currently working on a plugin to intercept blockchain domain requests and resolve them properly, but this isn't as easy as I had hoped so far and will almost certainly requre the user to do something that generally would not be advised for something such as the Tor browser.  
