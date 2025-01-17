@@ -16,8 +16,7 @@ This README provides an outline of the project. For detailed information on spec
 
 ---
 
-## Web Lookup
-My VPS provider shut down my service when I tried to host a Tor site. So for right now there is no clearnet service, though I do have the Tor site hosted from a local machine.  
+## Web Lookup 
 - **ClearNet:** https://alltheonions.pw/  
 - **Tor:** http://fvf3zavvvw373w6bbxo6nwjdhwel3x5wc2v4iosnmtm5t54guv5mnuid.onion/
 - **BlockChain** alltheonions.unstoppable  
