@@ -1,7 +1,13 @@
 # Creating Blockchain Records for your Onion Service
 
-Unstoppable Domains has a guide: https://docs.unstoppabledomains.com/smart-contracts/quick-start/manage-domain-records/
-For now it may be best to proceed with setting the record key as onion or onionsig for onion addresses or public signing key respectively. And of course setting the values appropriately: 'onion-address priority' and 'pubkey'  
-https://docs.unstoppabledomains.com/resolution/records-reference/#dweb-records Talks about the available record types with explanations.
+Unstoppable Domains has a guide: https://docs.unstoppabledomains.com/smart-contracts/quick-start/manage-domain-records/  
+Set the record as:  
+  key=dweb.onion.address and value=onion-address priority  
+  'dweb.onion.address' '2gzyxa5ihm7nsggfxnu52rck2vv4rvmdlkiu3zzui5du4xyclen53wid.onion 10'
 
-Long term it may be best to have UD add 'Tor' or 'onion' to browser.preferred_protocols (alongside 'ipfs' and 'http') and officially integrate into their DNS.
+Or  
+  key=dweb.onion.key and value=key  
+
+https://docs.unstoppabledomains.com/resolution/records-reference/#dweb-records Talks about the currently available record types with explanations.  
+
+Long term it may be best to have UD add 'Tor' or 'onion' to browser.preferred_protocols (alongside 'ipfs' and 'http') and officially integrate into their DNS. This should really only be a documentation and standards change in terms of the dweb records, as the key:value pairs are freeform strings.  
