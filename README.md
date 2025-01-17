@@ -6,12 +6,23 @@ This README provides an outline of the project. For detailed information on spec
 ---
 
 ## Table of Contents
+- [Web Lookup](#web-lookup)
 - [Overview](#overview)
 - [How It Works](#how-it-works)
 - [Usage](#usage)
 - [Planned Features](#planned-features)
 - [Contributing](#contributing)
 - [License](#license)
+
+---
+
+## Web Lookup
+My VPS provider shut down my service when I tried to host a Tor site. So for right now there is no clearnet service, though I do have the Tor site hosted from a local machine.  
+- **ClearNet:** https://alltheonions.pw/  
+- **Tor:** http://fvf3zavvvw373w6bbxo6nwjdhwel3x5wc2v4iosnmtm5t54guv5mnuid.onion/
+- **BlockChain** alltheonions.unstoppable  
+This page currently allows visitors to resolve Unstoppable Domains. At the moment it works with a variety of records, not just onion records.  
+In the background it uses a connection to Infura API (free level): https://www.infura.io/  
 
 ---
 
