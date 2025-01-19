@@ -89,24 +89,26 @@ In the background it uses a connection to Infura API (free level): https://www.i
 ## Planned Features
 
 - **Integration Plugins**  
-  - Browser add-ons or Node modules for streamlined resolution. RPC (local or remote), API or DOH (https or Tor)  
+  - Browser add-ons or Node modules for streamlined resolution. RPC (local or remote), API or DOH (https or Tor)    
 
 ---
 
 ## Considerations
 
-The best idea seems to be to add records following the existing standard set by UD: dweb.onion.address for example. There is an issue with resolving onion addresses - it seems best for exit nodes to resolve onion records to CNAME records with onion addresses. This allows the most freedom for future adoption with the fewest issues, it seems. So exit nodes can resolve onion records as CNAME records, immediately and without effort on the client attaining functionality. The client modifications to Tor browser (either official or not) are easier managed by the client and could include functionality to deal with onion and ipfs records for example - but that is controllable by the client and therefore not as much of a concern - at that point it seems better to already be following UD standards and be able to return a browser.preferred record which could allow clients to choose their own behavior (Tor browser will likely still want to always prioritize onion records).
+The best idea seems to be to add records following the existing standard set by UD: dweb.onion.address for example. There is an issue with resolving onion addresses - it seems best for exit nodes to resolve onion records to CNAME records with onion addresses. This allows the most freedom for future adoption with the fewest issues, it seems. So exit nodes can resolve onion records as CNAME records, immediately and without effort on the client attaining functionality. The client modifications to Tor browser (either official or not) are easier managed by the client and could include functionality to deal with onion and ipfs records for example - but that is controllable by the client and therefore not as much of a concern - at that point it seems better to already be following UD standards and be able to return a browser.preferred record which could allow clients to choose their own behavior (Tor browser will likely still want to always prioritize onion records).  
 
 
 ---
 
 ## Contributing
 
-We welcome community contributions. Please get in touch. Or just go ahead and fork the repo to get started.
+We welcome community contributions. Please get in touch. Or just go ahead and fork the repo to get started.  
+Get in touch: [Email](mailto:puurpl.x@ud.me)  
 
 ---
 
-## License
+## License  
+
 
 
 ---
