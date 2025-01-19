@@ -19,7 +19,7 @@ This README provides an outline of the project. For detailed information on spec
 
 ## Web Lookup 
 - **ClearNet:** https://alltheonions.pw/  
-- **Tor:** http://fvf3zavvvw373w6bbxo6nwjdhwel3x5wc2v4iosnmtm5t54guv5mnuid.onion/
+- **Tor:** http://fvf3zavvvw373w6bbxo6nwjdhwel3x5wc2v4iosnmtm5t54guv5mnuid.onion/ - Sorry it's only available sporadically. I am finding new hosting.  
 - **BlockChain** alltheonions.unstoppable  
 This page currently allows visitors to resolve Unstoppable Domains. At the moment it works with a variety of records, not just onion records.  
 In the background it uses a connection to Infura API (free level): https://www.infura.io/  
