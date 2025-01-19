@@ -11,6 +11,7 @@ This README provides an outline of the project. For detailed information on spec
 - [How It Works](#how-it-works)
 - [Usage](#usage)
 - [Planned Features](#planned-features)
+- [Considerations](#considerations)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -38,7 +39,7 @@ In the background it uses a connection to Infura API (free level): https://www.i
 
 1. **Leveraging Unstoppable Domains**  
    - We store records on the UD name service, which operates on various TLDs (e.g. `.crypto`, `.blockchain`, `.x`, etc.).  
-   - For an up-to-date list of UD’s TLDs, see their repo:  (there is one somewhere on their GH)  
+   - For an up-to-date list of UD’s TLDs, see their repo:  (there is one somewhere on their GH - update this with exact link)  
      [Unstoppable Domains Supported TLDs](https://github.com/unstoppabledomains)  
    - Each UD name can contain references (via DNS-like records) to:
      - **Onion addresses** (i.e., the Tor `.onion` domains)  
@@ -71,10 +72,10 @@ In the background it uses a connection to Infura API (free level): https://www.i
 
 1. **Obtain or Mint a Domain**  
    - Purchase a domain from Unstoppable Domains (or another integrated provider).  
-   - Or request a subdomain (e.g., `yoursubdomain.alltheonions.crypto`) via our interface.  
+   - Or request a subdomain (e.g., `yoursubdomain.alltheonions.crypto`) via our interface (coming soon).  
 
 2. **Set Your Onion Records**  
-   - Use our web interface (or direct blockchain interaction) to add records pointing to your onion address.  
+   - Use our web interface (or direct blockchain interaction - web interface coming soon) to add records pointing to your onion address.  
    - Optionally include a signing key record so visitors can verify the authenticity of your service.
   
 ---
@@ -89,6 +90,12 @@ In the background it uses a connection to Infura API (free level): https://www.i
 
 - **Integration Plugins**  
   - Browser add-ons or Node modules for streamlined resolution. RPC (local or remote), API or DOH (https or Tor)  
+
+---
+
+## Considerations
+
+The best idea seems to be to add records following the existing standard set by UD: dweb.onion.address for example. There is an issue with resolving onion addresses - it seems best for exit nodes to resolve onion records to CNAME records with onion addresses. This allows the most freedom for future adoption with the fewest issues, it seems. So exit nodes can resolve onion records as CNAME records, immediately and without effort on the client attaining functionality. The client modifications to Tor browser (either official or not) are easier managed by the client and could include functionality to deal with onion and ipfs records for example - but that is controllable by the client and therefore not as much of a concern - at that point it seems better to already be following UD standards and be able to return a browser.preferred record which could allow clients to choose their own behavior (Tor browser will likely still want to always prioritize onion records).
 
 
 ---
