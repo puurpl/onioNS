@@ -1,4 +1,4 @@
-# onioNS
+# onioNS (finally?)
 A privacy-respecting, cryptographically secure, and fully decentralized name service for authenticated, human-readable onion addresses.
 
 This README provides an outline of the project. For detailed information on specific components, please see the respective **README** files in each directory.
