@@ -31,7 +31,8 @@ In the background it uses a connection to Infura API (free level): https://www.i
 
 - **Privacy Respect** – Minimal personal data collection and optional anonymity in domain registration.  
 - **Cryptographic Security** – Blockchain-backed name records and cryptographic keys for verification.  
-- **Full Decentralization** – Records are stored and retrieved through decentralized infrastructure, reducing single points of failure.  
+- **Full Decentralization** – Records are stored and retrieved through decentralized infrastructure, reducing single points of failure.
+- **Fundraising Opportunity** – May be possible to team up with UD in the sale of .tor or .onion domains.  
 
 ---
 
