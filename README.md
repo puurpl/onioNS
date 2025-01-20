@@ -23,6 +23,7 @@ This README provides an outline of the project. For detailed information on spec
 - **BlockChain** alltheonions.unstoppable  
 This page currently allows visitors to resolve Unstoppable Domains. At the moment it works with a variety of records, not just onion records.  
 In the background it uses a connection to Infura API (free level): https://www.infura.io/  
+It is incredibly basic (inefficient) and just a prrof of concept, please don't abuse it and bear in mind it really cannot handle many requests at the moment (API rate limit).  
 
 ---
 
@@ -31,8 +32,8 @@ In the background it uses a connection to Infura API (free level): https://www.i
 
 - **Privacy Respect** – Minimal personal data collection and optional anonymity in domain registration.  
 - **Cryptographic Security** – Blockchain-backed name records and cryptographic keys for verification.  
-- **Full Decentralization** – Records are stored and retrieved through decentralized infrastructure, reducing single points of failure.
-- **Fundraising Opportunity** – May be possible to team up with UD in the sale of .tor or .onion domains.  
+- **Full Decentralization** – Records are stored and retrieved through decentralized infrastructure, reducing single points of failure.  
+- **Fundraising Opportunity** – May be possible to raise money for the Tor project and other privacy initiatives by teaming up with UD in the sale of .tor or .onion domains.  
 
 ---
 
@@ -48,8 +49,8 @@ In the background it uses a connection to Infura API (free level): https://www.i
      Both of those records will need to be stored in TXT records as key:value pairs  
 
 2. **Resolution on Exit Nodes**  
-   - Tor exit nodes can run an extra program or module to resolve UD domains to onion addresses, or could run modified hybrid resolvers.  
-   - This preserves the same security and decentralization Tor already offers for regular DNS.  
+   - Tor exit nodes can run an extra program or module to resolve UD domains to onion addresses, or could run modified hybrid resolvers. Until integration with the Tor browser the records should be returned as CNAME records.  
+   - This preserves the same security and decentralization Tor already offers for regular DNS. That relies on the exit nodes.  
    - Multiple retrieval methods from multiple sources (including a local node) provide redundancy and trust minimization, either for individual nodes or across the network as is currently the case.
 
 3. **Client-Side Resolution**  
