@@ -23,7 +23,7 @@ This README provides an outline of the project. For detailed information on spec
 - **BlockChain** alltheonions.unstoppable  
 This page currently allows visitors to resolve Unstoppable Domains. At the moment it works with a variety of records, not just onion records.  
 In the background it uses a connection to Infura API (free level): https://www.infura.io/  
-It is incredibly basic (inefficient) and just a prrof of concept, please don't abuse it and bear in mind it really cannot handle many requests at the moment (API rate limit).  
+It is incredibly basic (inefficient) and just a proof of concept, please don't abuse it and bear in mind it really cannot handle many requests at the moment (API rate limit).  
 
 ---
 
@@ -37,7 +37,7 @@ It is incredibly basic (inefficient) and just a prrof of concept, please don't a
 
 ---
 
-## How It Works
+## How It Works and Integration
 
 1. **Leveraging Unstoppable Domains**  
    - We store records on the UD name service, which operates on various TLDs (e.g. `.crypto`, `.blockchain`, `.x`, etc.).  
